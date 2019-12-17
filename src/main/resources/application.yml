@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: zuul
+  profiles:
+    active: @env@
+server:
+  port: 8087
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    healthcheck:
+      enabled: true
+zuul:
+  retryable: false
+#  sensitive-headers:
+#  add-host-header: true
+
